@@ -1,7 +1,11 @@
 arr = [int(x) for x in input("Enter elements separated by comma: ").split(",")]
-
 for i in range(1, len(arr)): # i represents the difference between elements
-    for j in range(0, len(arr)-i): # j iterates over the array to see at which difference elements are same
+    counter = 0
+    for j in range(0, len(arr)-i): # j iterates over the array to find elements with diffence i
         if arr[j+i]==arr[j]:
-            print(i, arr[j])
-        break # we are going from the lowest differences and least position elements so as soon as we get a twin pair, we can stop
+            print(arr[j])
+            counter+=1
+        if counter != 0: # stops code from printing multiple elements with same difference
+            break
+    if counter != 0: # stops code from printing multiple elements of increasing difference
+        break
