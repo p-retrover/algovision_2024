@@ -21,7 +21,7 @@ while (k <= b):
     else:
         break
 
-# add 1
+# increase by 1
 while (k< b):
     k+=1
     counter+=1
