@@ -8,29 +8,17 @@ if no_of_sides % 2 == 0 :
 elif no_of_sides == 5 : # bug
     print("YES")
     # figure
-    print(no_of_sides*"*")
-
-    for i in range(repeat):
-        print("* * *")
-    
-    print(no_of_sides*"*")
-
-    for i in range(repeat):
-        print("* * *")
-
-    print(no_of_sides*"*")
+    for i in range(1,no_of_sides+1):
+        if i == 1 or i == no_of_sides or i == int(no_of_sides/2)+1:
+            print(no_of_sides*"*")
+        else:
+            print("* * *")
 
 elif no_of_sides % 2 != 0 :
     print("YES")
     # figure
-    print(no_of_sides*"*")
-
-    for i in range(repeat):
-        print("*", no_of_spaces*" ","*", no_of_spaces*" ", "*")
-
-    print(no_of_sides*"*")
-
-    for i in range(repeat):
-        print("*", no_of_spaces*" ", "*", no_of_spaces*" ", "*")
-
-    print(no_of_sides*"*")
+    for i in range(1,no_of_sides+1):
+        if i == 1 or i == no_of_sides or i == int(no_of_sides/2)+1:
+            print(no_of_sides*"*")
+        else:
+            print("*", no_of_spaces*" ","*", no_of_spaces*" ", "*")
