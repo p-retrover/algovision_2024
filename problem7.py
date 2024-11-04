@@ -12,7 +12,7 @@ for j in range(no_of_test_cases):
                 ra_one+=arr[i]
             for i in range(1, len(arr), 2):
                 g_one+=arr[i]
-        if j % 2 != 0: # fir even numbered test cases, g_one starts
+        if j % 2 != 0: # for even numbered test cases, g_one starts
             for i in range(0, len(arr), 2):
                 g_one+=arr[i]
             for i in range(1, len(arr), 2):
