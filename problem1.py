@@ -1,7 +1,7 @@
 no_of_sides = int(input())
 no_of_spaces = int((no_of_sides -2)/2) - 2
 repeat = int((no_of_sides - 3)/2)
-print(no_of_spaces)
+# print(no_of_spaces)
 if no_of_sides % 2 == 0 :
     print("NO")
 
