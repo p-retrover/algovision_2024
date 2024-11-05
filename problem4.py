@@ -6,11 +6,15 @@ def isWeak(num):
     else:
         first_counter = 0
         second_counter = 0
-        for i in range(0,2): # checks for cyclic and consequitive in first 3
-            if (int(num[i])+1)%10 == int(num[i+1]):
+        for i in range(0,2): # checks for cyclic and consequitive in first 3 digits
+            current_digit = int(num[i])
+            next_digit = int(num[i+1])
+            if (current_digit+1)%10 == next_digit:
                 first_counter += 1
-        for i in range(1,3): # checks for cyclic and consequitive in last 3
-            if (int(num[i])+1)%10 == int(num[i+1]):
+        for i in range(1,3): # checks for cyclic and consequitive in last 3 digits
+            current_digit = int(num[i])
+            next_digit = int(num[i+1])
+            if (current_digit+1)%10 == next_digit:
                 second_counter += 1
         if first_counter == 2 or second_counter == 2:
             return True
