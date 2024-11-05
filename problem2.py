@@ -10,4 +10,3 @@ while number != 1:
         print((int(number*3)+1), end = ' ')
         number = int((number*3)+1)
         continue
-    break
